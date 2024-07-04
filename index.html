@@ -27,19 +27,25 @@
 
     <h1>Zadejte Město:</h1>
 
-      <div class="input-group">
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Město"
-          id="cityInput"
-        />
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" id="submit" type="button">
-            Potvrdit
-          </button>
+      <form class="w-100 needs-validation" novalidate>
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Město"
+            id="cityInput"
+            required
+          />
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" id="submit" type="submit">
+              Potvrdit
+            </button>
+          </div>
+          <div class="invalid-feedback">
+            Prosím, zadejte název města
+          </div>
         </div>
-      </div>
+    </form>
 
       <div id="card" class="card w-100 lg-w-75 p-5 d-none">
         <div class="card-body">
